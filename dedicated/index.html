@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Dedicated Web Worker</title>
+    <style>
+        body {
+            margin: 24px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        button {
+            height: 48px;
+            width: 240px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .inline {
+            display: block;
+        }
+
+        .inline > div {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<small>- Need video input (Webcam etc.)</small>
+<video autoplay id="video" style="display: none"></video>
+<div class="inline">
+    <div>
+        <h2>Before</h2>
+        <canvas id="canvas-pure"></canvas>
+    </div>
+    <div>
+        <h2>After</h2>
+        <canvas id="canvas"></canvas>
+    </div>
+</div>
+<ul id="sources"></ul>
+<pre id="pixel"></pre>
+<script src="app.js"></script>
+</body>
+</html>
